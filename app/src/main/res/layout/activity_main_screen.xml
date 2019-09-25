@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:background="@color/colorPrimary"
+    tools:context=".MainScreen">
+
+<LinearLayout
+    android:id="@+id/linear_top_text"
+    android:layout_centerHorizontal="true"
+    android:layout_alignParentTop="true"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textview_polish"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/pacifico"
+        android:text="Polish"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="your"
+        android:textAllCaps="true"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-black"
+        android:textColor="#fff"/>
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/textview_Vocabulary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear_top_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/lobster_two_italic"
+        android:text="Vocabulary"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/play_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/play2"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

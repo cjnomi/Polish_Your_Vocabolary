@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round_custom_dialog"
+    android:layout_weight="10">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:background="@drawable/custom_dialog_background_2">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tutorial"
+            android:textAllCaps="true"
+            android:textColor="#666666"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        android:layout_weight="8"
+        >
+        <ImageView
+            android:id="@+id/bulb"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_lightbulb_outline_black_24dp"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/tip_ingame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tips"
+            android:layout_below="@+id/bulb"
+            android:layout_centerHorizontal="true"
+            style="@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse"
+            android:fontFamily="sans-serif-condensed-medium"
+            android:textColor="@color/yellow_700"/>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/tip_ingame"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>
