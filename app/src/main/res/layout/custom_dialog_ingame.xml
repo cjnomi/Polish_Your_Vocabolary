@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/round_custom_dialog"
     android:layout_weight="10">
@@ -42,75 +44,29 @@
             style="@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse"
             android:fontFamily="sans-serif-condensed-medium"
             android:textColor="@color/yellow_700"/>
-        <LinearLayout
+        <RelativeLayout
             android:id="@+id/tip_text"
-            android:layout_marginTop="10dp"
             android:layout_below="@+id/tip_ingame"
             android:layout_width="match_parent"
             android:orientation="vertical"
             android:layout_height="200dp">
 
-            <ScrollView
-                android:padding="8dp"
+            <androidx.viewpager.widget.ViewPager
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                >
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical">
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Write words in box and click on add button to add in the list below"
-                    android:textAlignment="center"
-                    android:textColor="#666666"
-                    style="@style/TextAppearance.AppCompat.Body2"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Add as many words as you can until timer runs out (Check for the timer on top left corner)"
-                    android:textAlignment="center"
-                    android:textColor="#666666"
-                    style="@style/TextAppearance.AppCompat.Body2"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="You can also chech on how many words you have added on top right corner"
-                    android:textAlignment="center"
-                    android:textColor="#666666"
-                    style="@style/TextAppearance.AppCompat.Body2"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Once you have managed to add required number of words the timer will stop automatically on last word added and you can then see you score"
-                    android:textAlignment="center"
-                    android:textColor="#666666"
-                    style="@style/TextAppearance.AppCompat.Body2"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="You can leave the game and you stats will not be saved (Game Over)"
-                    android:textAlignment="center"
-                    android:textColor="#666666"
-                    style="@style/TextAppearance.AppCompat.Body2"
-                    android:textSize="15dp"/>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Your timer will start when you click the start button below make sure to relax and do your best"
-                    android:textAlignment="center"
-                    android:textColor="#666666"
-                    style="@style/TextAppearance.AppCompat.Body2"
-                    android:textSize="15dp"/>
-                </LinearLayout>
-            </ScrollView>
+                android:layout_height="180dp"
+                android:id="@+id/view_pager"/>
+            <me.relex.circleindicator.CircleIndicator
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:id="@+id/circleindicator_id"
+                android:layout_marginTop="160dp"
+                app:ci_width="5dp"
+                app:ci_height="5dp"
+                app:ci_drawable="@drawable/circleindicator_round"/>
 
-        </LinearLayout>
+
+
+        </RelativeLayout>
         <Button
             android:id="@+id/test_my_mind_id"
             android:layout_marginTop="10dp"
@@ -121,17 +77,8 @@
             android:text="Test My Mind"
             android:textAllCaps="false"
             android:textSize="16dp"
-            android:textColor="#666666"/>
-        <TextView
-            android:layout_marginTop="10dp"
-            android:layout_below="@+id/test_my_mind_id"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Good Luck ;-)"
-            android:layout_centerHorizontal="true"
-            style="@style/TextAppearance.AppCompat.Widget.ActionMode.Title.Inverse"
-            android:fontFamily="sans-serif-condensed-medium"
-            android:textColor="@color/yellow_700"/>
+            android:textColor="#666666"
+            android:layout_marginBottom="6dp"/>
     </RelativeLayout>
 
 </LinearLayout>

@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Polish Your Vocabolary</string>
+    <string name="tutorial_text_1">Write words in box and click on add button to add in the list below</string>
+    <string name="tutorial_text_2">Add as many words as you can until timer runs out (Check for the timer on top left corner)</string>
+    <string name="tutorial_text_3">You can also check on how many words you have added on top right corner</string>
+    <string name="tutorial_text_4">Once you have managed to add required number of words the timer will stop automatically on last word added and you can then see you score</string>
+    <string name="tutorial_text_5">You can leave the game and your stats will not be saved (Game Over)</string>
+    <string name="tutorial_text_6">Your timer will start when you click the "Test My Mind" button below make sure to relax and do your best</string>
+    <string name="tutorial_text_7">Good Luck ;-)</string>
 </resources>
